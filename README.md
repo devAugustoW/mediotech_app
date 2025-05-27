@@ -30,4 +30,4 @@ O Mediotech é uma plataforma PWA (Progressive Web App) de gestão educacional p
 
 ## Status do Projeto
 
-Em desenvolvimento inicial. Atualmente implementando estrutura base e Context API para autenticação.
+Em desenvolvimento inicial. Atualmente implementando estrutura base.
