@@ -129,51 +129,51 @@
    - COORDENADOR
       - COORDINATOR_HOME
          - Lista com os últimos comunicados enviados
-               - Ícone, Assunto, Destinatário(s), Ações (Editar, Deletar)
+            - Ícone, Assunto, Destinatário(s), Ações (Editar, Deletar)
          - Indicadores:
-               - Total de turmas
-               - Total de alunos
-               - Total de professores
+            - Total de turmas
+            - Total de alunos
+            - Total de professores
          - Gráficos:
-               - Progresso: alunos cadastrados em turmas
-               - Progresso: professores vinculados às disciplinas
-               - Progresso escolar de até 4 turmas
+            - Progresso: alunos cadastrados em turmas
+            - Progresso: professores vinculados às disciplinas
+            - Progresso escolar de até 4 turmas
                
       - COORDINATOR_CLASSES
          - Botão "Nova Turma" → Abre modal de cadastro
          - Botão "Ver todas as turmas" → Abre `COORDINATOR_CLASSES_LIST`
          - Tabela de Turmas
-               - Nome, Série, Turno, Nº de Alunos, Progresso de notas, Ações (Editar, Deletar)
+            - Nome, Série, Turno, Nº de Alunos, Progresso de notas, Ações (Editar, Deletar)
          - Indicadores
-               - Total de Turmas
-               - Total de Alunos
+            - Total de Turmas
+            - Total de Alunos
          - Gráfico de Barras
-               - Média de alunos por Série 1º, 2º e 3º
+            - Média de alunos por Série 1º, 2º e 3º
       - COORDINATOR_CLASSES_LIST
          - Abre ao clicar em "Turmas”
          - Lista detalhada de turmas:
-               - Nome, Série,
-               - Turno,
-               - Nº de Alunos,
-               - Situação (Notas incompletas / Falta disciplina / Tudo em dia),
-               - Progresso de notas
+            - Nome, Série,
+            - Turno,
+            - Nº de Alunos,
+            - Situação (Notas incompletas / Falta disciplina / Tudo em dia),
+            - Progresso de notas
          - Ícones de ação
-               - Enviar Comunicado (com turma pré-selecionada)
-               - Editar
-               - Deletar
+            - Enviar Comunicado (com turma pré-selecionada)
+            - Editar
+            - Deletar
          - Ao clicar em uma linha de uma turma:
-               - Expande a linha para exibir as **Disciplinas associadas à turma**.
-               - Para cada disciplina, exibir:
-                  - Nome da disciplina
-                  - Professor responsável
-                  - Situação (ex.: “Notas lançadas”, “Atividades pendentes”) *(sugestão de campos úteis)*
+            - Expande a linha para exibir as **Disciplinas associadas à turma**.
+            - Para cada disciplina, exibir:
+               - Nome da disciplina
+               - Professor responsável
+               - Situação (ex.: “Notas lançadas”, “Atividades pendentes”) *(sugestão de campos úteis)*
          - Clique na linha de uma disciplina (expandida):
-               - Expande novamente para exibir a **lista de alunos daquela turma**.
-               - Para cada aluno, exibir:
-                  - Nome completo
-                  - Situação da atividade (Entregue / Atrasada / Não enviada)
-                  - Nota (se lançada)
-                  - Presença (se aplicável)
+            - Expande novamente para exibir a **lista de alunos daquela turma**.
+            - Para cada aluno, exibir:
+               - Nome completo
+               - Situação da atividade (Entregue / Atrasada / Não enviada)
+               - Nota (se lançada)
+               - Presença (se aplicável)
          
       - COORDINATOR_DISCIPLINES
       - COORDINATOR_TEACHERS
@@ -182,20 +182,20 @@
    - PROFESSOR
       - TEACHER_HOME
          - Lista com Atividades Recentes
-               - Ícone
-               - Disciplina
-               - Título da atividade
-               - Ddata de envio
-               - Ícones de ação (editar e deletar)
+            - Ícone
+            - Disciplina
+            - Título da atividade
+            - Ddata de envio
+            - Ícones de ação (editar e deletar)
          - Gráficos Progresso escolar das classes
-               - Medição baseada na quantidade de atividades lançadas e notas atribuídas
-               - Considera:
-                  - Cada disciplina possui 2 atividades
-                  - Para estar completo, cada aluno deve ter 2 notas atribuídas por disciplina
+            - Medição baseada na quantidade de atividades lançadas e notas atribuídas
+            - Considera:
+               - Cada disciplina possui 2 atividades
+               - Para estar completo, cada aluno deve ter 2 notas atribuídas por disciplina
          - Indicadores:
-               - Total de Turmas
-               - Total de Disciplinas
-               - Total de Alunos
+            - Total de Turmas
+            - Total de Disciplinas
+            - Total de Alunos
                
       - TEACHER_CLASSES
       - TEACHER_DISCIPLINES
@@ -219,6 +219,7 @@
       email VARCHAR(150) UNIQUE NOT NULL,
       password_hash TEXT NOT NULL,
       role VARCHAR(20) CHECK (role IN ('COORDINATOR', 'TEACHER', 'STUDENT')) NOT NULL,
+      avatar_url TEXT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
    ```
