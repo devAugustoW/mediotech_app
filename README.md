@@ -1,5 +1,8 @@
 # Mediotech
 
+![mediotech_img](https://github.com/user-attachments/assets/d242d571-df73-4a7d-9cf3-6f8b66a9d2bf)
+
+
 ## Sobre o Projeto
 
 O Mediotech é uma plataforma PWA (Progressive Web App) de gestão educacional projetada para conectar coordenadores, professores e alunos. A aplicação oferece uma solução intuitiva, moderna e segura para o ambiente acadêmico, facilitando a comunicação e o gerenciamento de atividades pedagógicas.
